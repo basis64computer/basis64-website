@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - BASIS-64 Computer</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html"><img src="assets/img/logo.png" width="48px" height="48px" />BASIS-64</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Halaman Utama</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Produk, Jasa, dan Software</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Produk
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="produk-laptop.html">Laptop</a>
+                                    <a class="nav-link" href="produk-aksesoris.html">Aksesoris</a>
+                                    <a class="nav-link" href="produk-monitor.html">Monitor</a>
+                                    <a class="nav-link" href="produk-komponen-komputer.html">Komponen Komputer</a>
+                                    <a class="nav-link" href="produk-printer.html">Printer & Scanner</a>
+                                    <a class="nav-link" href="produk-networking.html">Networking</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages2" aria-expanded="false" aria-controls="collapsePages2">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Jasa
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages2" aria-labelledby="" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="jasa-install-ulang.html">Install Ulang</a>
+                                    <a class="nav-link" href="jasa-perbaikan-hardware.html">Service Laptop</a>
+                                    <a class="nav-link" href="jasa-recovery.html">Recovery Data</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Software
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="software-iso.html">ISO</a>
+                                    <a class="nav-link" href="software-windows.html">Software Windows</a>
+                                    <a class="nav-link" href="software-linux.html">Software Linux</a>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Lainnya</div>
+                            <a class="nav-link" href="feedback.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Feedback
+                            </a>
+                            <a class="nav-link" href="login.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Login
+                            </a>
+                            <a class="nav-link" href="anggota.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Anggota Kelompok
+                            </a>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main style="background-color: rgb(78,78,148);">
+                    <img src="assets/img/background.png" width="100%" />
+                    <div class="aboutBlack" id="aboutBlack">
+                        <div class="aboutSubtitle" style="color:white;">Produk</div>
+                        Kami menjual berbagai produk seperti laptop, komputer, keyboard, mouse, monitor, headset, Hardisk, SSD, dan masih banyak lagi.
+                        Kami menjual produk yang dapat memenuhi kebutuhan Anda. Kami menjual laptop, mulai dari laptop gaming berperforma tinggi hingga
+                        notebook portabel untuk kebutuhan sehari-hari, kami memiliki berbagai pilihan laptop dan komputer untuk memenuhi kebutuhan Anda.
+                    </div>
+                    <div class="parallaxCenter" style="background-image: url(assets/img/gaming.jpg);"></div>
+                    <div class="aboutBlack" id="aboutBlack">
+                        <div class="aboutSubtitle" style="color:white;">Jasa</div>
+                        Kami memiliki beberapa jasa seperti install ulang sistem operasi, perbaikan laptop, dan recovery data. Anda dapat melihat daftar harganya di sini.
+                    </div>
+                    <div class="parallaxCenter" style="background-image: url(assets/img/laptop.jpg);"></div>
+                    <div class="aboutBlack" id="aboutBlack">
+                        <div class="aboutSubtitle" style="color:white;">Software</div>
+                        Di sini Anda dapat mengunduh file ISO sistem operasi, Anda dapat mencoba sistem operasi yang belum pernah Anda gunakan. Dengan mencoba berbagai sistem operasi, Anda dapat menambah pengalaman Anda dengan sistem operasi.
+                    </div>
+                    <div class="parallaxCenter" style="background-image: url(assets/img/sistem-operasi.jpg);"></div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; BASIS-64 Computer 2024</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
