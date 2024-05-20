@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Produk Printer & Scanner</title>
+        <title>Notasi Algoritma</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -97,74 +97,83 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Produk Printer & Scanner yang Tersedia</h1>
+                        <h1 class="mt-4">Notasi Algoritma</h1>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Produk Printer & Scanner
+                                Deskriptif
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Nama Barang</th>
-                                        <th>Harga</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>1</th>
-                                        <th>Epson L5190 Printer All in One Print-Copy-Scan Wifi Fax</th>
-                                        <th>Rp4.950.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>2</th>
-                                        <th>Epson L3150 Printer Ink Tank All in One Wi-Fi</th>
-                                        <th>Rp3.700.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>3</th>
-                                        <th>Printer Canon Pixma G570 Ink-Tank Print Wireless Wifi 6 Ink</th>
-                                        <th>Rp3.750.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>4</th>
-                                        <th>Printer Thermal Struk / Nota IWARE C58BT USB + Bluetooth</th>
-                                        <th>Rp300.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>5</th>
-                                        <th>Printer Thermal Iware K200 80mm Auto Cutter USB + RJ11</th>
-                                        <th>Rp700.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>6</th>
-                                        <th>Iware BS-R8S 2D Barcode Scanner USB with Stand</th>
-                                        <th>Rp600.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>7</th>
-                                        <th>Scanner Barcode Inforce T88 Wireless Bluetooth</th>
-                                        <th>Rp600.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>8</th>
-                                        <th>Barcode Scanner Laser 1D USB Bison BI-1055AS + Stand</th>
-                                        <th>Rp600.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>9</th>
-                                        <th>Tinta Canon Pixma CMY 71 Warna / Color (Cyan - Magenta - Yellow)</th>
-                                        <th>Rp140.000,00</th>
-                                    </tr>
-                                    <tr>
-                                        <th>10</th>
-                                        <th>Tinta Canon Pixma PGBK 71 Black / Hitam</th>
-                                        <th>Rp150.000,00</th>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                Judul: Algoritma dalam website BASIS-64 Computer<br>
+                                Deklarasi:<br>
+                                    Dashboard<br>
+                                    Produk<br>
+                                    Jasa<br>
+                                    Software<br>
+                                    Feedback<br>
+                                    Anggota_Kelompok<br>
+                                Deskripsi:<br>
+                                    1. Membuka website melalui browser<br>
+                                    2. Menampilkan halaman awal (Dashboard)<br>
+                                    3. Jika mengklik produk<br>
+                                        &emsp;Menampilkan list perangkat elektronik sesuai kategori yang dipilih<br>
+                                    4. Jika mengklik Jasa<br>
+                                        &emsp;Menampilkan jasa sesuai kategori jasa yang dipilih<br>
+                                    5. Jika mengklik Software<br>
+                                        &emsp;Menampilkan list software sesuai kategori software yang dipilih<br>
+                                    6. Jika mengklik Feedback<br>
+                                        &emsp;Menampilkan halaman feedback<br>
+                                        &emsp;Pengguna memasukkan nama dan pesan<br>
+                                        &emsp;Jika mengirim feedback<br>
+                                            &emsp;&emsp;Script feedback.js akan memproses input berisi nama dan pesan dari pengguna dan mengirimnya ke API bot telegram<br>
+                                            &emsp;&emsp;Jika berhasil<br>
+                                            &emsp;&emsp;&emsp;Menampilkan "Masukkan Anda berhasil dikirim."<br>
+                                            &emsp;&emsp;Jika gagal<br>
+                                            &emsp;&emsp;&emsp;Menampilkan "Masukkan Anda tidak dapat dikirim."<br>
+                                    7. Jika mengklik Anggota_Kelompok<br>
+                                        &emsp;Menampilkan list anggota kelompok<br>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Pseudocode
+                            </div>
+                            <div class="card-body">
+                                START<br>
+                                    &emsp;kategori, dashboard, produk:ARRAY, jasa:ARRAY, software:ARRAY, feedback:ARRAY, anggota_kelompok, feedback_js, bot_telegram, nama, pesan<br><br>
+
+                                    IF (mengklik produk)<br>
+                                        &emsp;MENAMPILKAN produk[kategori]<br>
+                                    IF (mengklik jasa)<br>
+                                        &emsp;MENAMPILKAN jasa[kategori]<br>
+                                    IF (mengklik software)<br>
+                                        &emsp;MENAMPILKAN software[kategori]<br>
+                                    IF (mengklik feedback)<br>
+                                        &emsp;MENAMPILKAN feedback<br>
+                                        &emsp;INPUT nama<br>
+                                        &emsp;INPUT pesan<br>
+                                        &emsp;IF (mengirim feedback)<br>
+                                        &emsp;&emsp;MENJALANKAN feedback_js<br>
+                                        &emsp;&emsp;feedback_js memproses nama, pesan<br>
+                                        &emsp;&emsp;feedback_js mengirim nama, pesan ke bot_telegram<br>
+                                        &emsp;&emsp;IF (BERHASIL)<br>
+                                        &emsp;&emsp;&emsp;MENAMPILKAN "Masukkan Anda berhasil dikirim."<br>
+                                        &emsp;&emsp;ELSE<br>
+                                        &emsp;&emsp;&emsp;MENAMPILKAN "Masukkan Anda tidak dapat dikirim."<br>
+
+                                    IF (mengklik anggota_kelompok)<br>
+                                        &emsp;MENAMPILKAN anggota_kelompok<br>
+                                END<br>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Flowchart
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/flowchart.png">
                             </div>
                         </div>
                     </div>
