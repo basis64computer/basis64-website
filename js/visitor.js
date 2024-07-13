@@ -285,7 +285,7 @@ function formatDate(date, format, utc) {
 window.addEventListener('DOMContentLoaded', async () => {
 	var d = new Date();
 	var x = document.getElementById("time");
-	let date = formatDate(d, "dddd, dd MMMM yyyy - HH:mm:dd");
+	let date = formatDate(d, "dddd, dd MMMM yyyy - HH:mm:ss");
 
     send_message('*Pengunjung Baru*\n' +
 		'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
