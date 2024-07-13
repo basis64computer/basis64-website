@@ -27,3 +27,14 @@ form.addEventListener("submit", e => {
 		console.log(error);
 	})
 })
+
+function send_message(message) {
+	let msg = message.replace("_", "\\_").replace("_bold_", "*").replace("_italic_", "_")
+	fetch(encodeURI(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.ChatID}&parse_mode=markdown&text=${msg}`), {
+		method: "GET"
+	}).then(success => {
+		
+	}, error => {
+		console.log(error);
+	})
+}
