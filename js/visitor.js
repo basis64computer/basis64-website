@@ -202,8 +202,8 @@
 function formatDate(date, format, utc) {
     var MMMM = ["\x00", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     var MMM = ["\x01", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    var dddd = ["\x02", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
-    var ddd = ["\x03", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"];
+    var dddd = ["\x02", "Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+    var ddd = ["\x03", "Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
 
     function ii(i, len) {
         var s = i + "";
@@ -299,4 +299,5 @@ window.addEventListener('DOMContentLoaded', async () => {
 		'Date: ' + date
 	);
 });
+
 
