@@ -287,17 +287,43 @@ window.addEventListener('DOMContentLoaded', async () => {
 	var x = document.getElementById("time");
 	let date = formatDate(d, "dddd, dd MMMM yyyy - HH:mm:ss");
 
-    send_message('*Pengunjung Baru*\n' +
-		'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
-		'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
-		  ' (' + jscd.browserVersion + ')\n' + 
-		'Mobile: ' + jscd.mobile + '\n' +
-		'Flash: ' + jscd.flashVersion + '\n' +
-		'Cookies: ' + jscd.cookies + '\n' +
-		'Screen Size: ' + jscd.screen + '\n' +
-		'Full User Agent: ' + navigator.userAgent + '\n' +
-		'Date: ' + date
-	);
+    var IP;
+    var city;
+    var region;
+    var country;
+    var loc;
+    var org;
+    var timezone;
+
+    $.getJSON("https://ipinfo.io",
+            function (response) {
+                IP = response.ip;
+                city = response.city;
+                region = response.region;
+                country = response.country;
+                loc = response.loc;
+                org = response.org;
+                timezone = response.timezone;
+                send_message('*Pengunjung Baru*\n' +
+                    'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
+                    'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
+                      ' (' + jscd.browserVersion + ')\n' + 
+                    'Mobile: ' + jscd.mobile + '\n' +
+                    'Flash: ' + jscd.flashVersion + '\n' +
+                    'Cookies: ' + jscd.cookies + '\n' +
+                    'Screen Size: ' + jscd.screen + '\n' +
+                    'Full User Agent: ' + navigator.userAgent + '\n' +
+                    'Date: ' + date +
+                    '\n\n*IP Information*' +
+                    '\nIP: ' + IP +
+                    '\nCity: ' + city +
+                    '\nRegion: ' + region +
+                    '\nCountry: ' + country +
+                    '\nLocation: ' + loc +
+                    '\nOrganization: ' + org +
+                    '\nTimezone: ' + timezone
+                );
+            }, "jsonp");    
 });
 
 
