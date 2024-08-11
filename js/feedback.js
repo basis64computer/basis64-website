@@ -1,11 +1,11 @@
-let form = document.querySelector("#form");
+let feedbackForm = document.querySelector("#feedbackForm");
 
 let bot = {
 	TOKEN: "6782845267:AAGBdmLNBYXJL5D3mmjvCq2qrY_tlysSY5Y",
 	ChatID: "5981475588",
 }
 
-form.addEventListener("submit", e => {
+feedbackForm.addEventListener("submit", e => {
 	e.preventDefault();
 
 	let name = document.querySelector("#name");
