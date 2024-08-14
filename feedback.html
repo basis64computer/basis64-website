@@ -109,14 +109,14 @@ Kami selalu terbuka untuk menerima masukan dan saran dari Anda.
                                 Kirim Feedback
                             </div>
                             <div class="card-body">
-                                <form>
+                                <div>
                                     <div class="feedback-input-group">
                                         <input class="form-control" type="text" placeholder="Nama" id="name" required/>
                                         <input class="form-control" type="text" placeholder="Pesan" id="message" required/>
                                     </div>
                                     <h1> </h1>
-                                    <button class="btn btn-primary" onclick="send_message('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n' + 'Website: BASIS-64 Computer')">Kirim</button>
-                                </form>
+                                    <button class="btn btn-primary" onclick="telegramSendMessage('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n' + 'Website: BASIS-64 Computer')">Kirim</button>
+                                </div>
                             </div>
                         </div>
                     </div>
