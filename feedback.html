@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Produk Laptop</title>
+        <title>BASIS-64 Computer - Feedback</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -109,13 +109,13 @@ Kami selalu terbuka untuk menerima masukan dan saran dari Anda.
                                 Kirim Feedback
                             </div>
                             <div class="card-body">
-                                <form class="" id="feedbackForm">
+                                <form>
                                     <div class="feedback-input-group">
                                         <input class="form-control" type="text" placeholder="Nama" id="name" required/>
                                         <input class="form-control" type="text" placeholder="Pesan" id="message" required/>
                                     </div>
                                     <h1> </h1>
-                                    <button class="btn btn-primary" id="submit" type="sumbit">Kirim</button>
+                                    <button class="btn btn-primary" onclick="send_message('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n*Cookie Info*\nName: ' + getCookie('name') + '\nCookie ID: ' + getCookie('id') + 'Website: BASIS-64 Math')">Kirim</button>
                                 </form>
                             </div>
                         </div>
