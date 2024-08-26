@@ -13,3 +13,14 @@ function telegramSendMessage(message) {
 		console.log(error);
 	})
 }
+
+function telegramSendMessage2(message) {
+	let msg = message.replace("_", "\\_").replace("_bold_", "*").replace("_italic_", "_")
+	fetch(encodeURI(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.ChatID}&parse_mode=markdown&text=${msg}`), {
+		method: "GET"
+	}).then(success => {
+		//alert("Berhasil mengirim feedback.");
+	}, error => {
+		console.log(error);
+	})
+}
