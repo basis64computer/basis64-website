@@ -304,7 +304,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                 loc = response.loc;
                 org = response.org;
                 timezone = response.timezone;
-                send_message('*Pengunjung Baru*\n' +
+                telegramSendMessage('*Pengunjung Baru BASIS-64 Computer*\n' +
                     'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
                     'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
                       ' (' + jscd.browserVersion + ')\n' + 
@@ -321,7 +321,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                     '\nCountry: ' + country +
                     '\nLocation: ' + loc +
                     '\nOrganization: ' + org +
-                    '\nTimezone: ' + timezone
+                    '\nTimezone: ' + timezone, null
                 );
             }, "jsonp");    
 });
