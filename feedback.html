@@ -115,7 +115,9 @@ Kami selalu terbuka untuk menerima masukan dan saran dari Anda.
                                         <input class="form-control" type="text" placeholder="Pesan" id="message" required/>
                                     </div>
                                     <h1> </h1>
-                                    <button class="btn btn-primary" onclick="telegramSendMessage('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n' + 'Website: BASIS-64 Computer')">Kirim</button>
+                                    <button class="btn btn-primary" onclick="telegramSendMessage('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n' + 'Website: BASIS-64 Computer', function() {
+                                        $('#feedbackModal').modal('show');
+                                    })">Kirim</button>
                                 </div>
                             </div>
                         </div>
@@ -135,10 +137,28 @@ Kami selalu terbuka untuk menerima masukan dan saran dari Anda.
                 </footer>
             </div>
         </div>
+        <!-- Feedback modal -->
+        <div id="feedbackModal" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Feedback</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Berhasil mengirim feedback.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="js/feedback.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/jquery.min.js"></script>
     </body>
 </html>
